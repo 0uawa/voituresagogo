@@ -1,57 +1,59 @@
 /* css général */
-    /* importation de la police d'écriture */
-    @font-face {
-        font-family: 'Open Sans';
-        src: url("/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf") format("truetype");
-    }
-    /* application de la police d'écriture à tout les carachtère du site */
-    *{
-        font-family: 'Open Sans';
-    }
-    /* css général des balises */
+/* importation de la police d'écriture */
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf")
+    format("truetype");
+}
+/* application de la police d'écriture à tout les carachtère du site */
+* {
+  font-family: "Open Sans";
+}
 
-    body{
-        background-color: #F6F7F9;
-        margin: 0;
-    }
+/* css général des balises */
 
-    h1{
-        all: unset;
-        font-weight: 700;
-        font-size: 20px;
-    }
-    
-    form{
-        display: flex;
-        flex-direction: column;
-        gap:30px;
-    }
+body {
+  background-color: #f6f7f9;
+  margin: 0;
+}
 
-    label{
-        font-weight: 600; 
-        font-size: 16px;
-    }
+h1 {
+  all: unset;
+  font-weight: 700;
+  font-size: 20px;
+}
 
-    input{
-        height: 40px;
-        border: 1px solid #596780;
-        border-radius: 10px;
-        padding: 0 0 0 30px;
-    }
+.formPart {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 
-    input[type="checkbox"]{
-        margin:0 20px 0 0;
-        height: 20px;
-        width: 20px;
-    }
+label {
+  font-weight: 600;
+  font-size: 16px;
+}
 
-    input[type="radio"]{
-        margin:0 20px 0 0;
-        height: 20px;
-        width: 20px;
-    }
+input {
+  height: 40px;
+  border: 1px solid #596780;
+  border-radius: 10px;
+  padding: 0 0 0 30px;
+}
 
-    /* .hautRadio+form{
+input[type="checkbox"] {
+  margin: 0 20px 0 0;
+  height: 20px;
+  width: 20px;
+}
+
+input[type="radio"] {
+  margin: 0 20px 0 0;
+  height: 20px;
+  width: 20px;
+}
+
+/* .hautRadio+form{
         display: none;
     }
 
@@ -59,251 +61,237 @@
         display: block;
     } */
 
-    fieldset{
-        border: 0px;
-        padding: 0px;
-        margin: 0px;
-    }
-    
-    select{
-        height: 40px;
-        border: 1px solid #596780;
-        border-radius: 10px;
-        padding: 0 0 0 30px;
-    }
-    /* css de la colonne gauche de la page */
-    .left { 
-        display: flex;
-        flex-direction: column;
-        flex-grow: 3;
-        gap: 30px;
-    }
-    .left p{
-        margin: 0 0 30px 0;
-    }
-    
+fieldset {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+}
 
-    /* css des conteneurs qui contiennent un label et un champs de texte */
-    .select{
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        gap:15px;
-    }
-    /* css des conteneurs qui contiennent deux .select*/
-    .ligne{
-        display: flex;
-        gap: 0 30px;
-    }
-    /* css des conteneurs qui contiennent un label et un input de type "radio" ou "checkbox"*/
-    .selection{
-        display: flex;
-        align-items: center;
-    }
-    
-    
+select {
+  height: 40px;
+  border: 1px solid #596780;
+  border-radius: 10px;
+  padding: 0 0 0 30px;
+}
+/* css de la colonne gauche de la page */
+.left {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+  gap: 30px;
+}
+.left p {
+  margin: 0 0 30px 0;
+}
+
+/* css des conteneurs qui contiennent un label et un champs de texte */
+.select {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 15px;
+}
+/* css des conteneurs qui contiennent deux .select*/
+.ligne {
+  display: flex;
+  gap: 0 30px;
+}
+/* css des conteneurs qui contiennent un label et un input de type "radio" ou "checkbox"*/
+.selection {
+  display: flex;
+  align-items: center;
+}
 
 /* css header */
 
-    header {
-        padding: 40px 0px 40px 60px;
-        background-color: white;
-    }
-    header p{
-        all: unset;
-        color: #3563E9;
-        font-weight: 700;
-        font-size: 32px;
-    }
+header {
+  padding: 40px 0px 40px 60px;
+  background-color: white;
+}
+header p {
+  all: unset;
+  color: #3563e9;
+  font-weight: 700;
+  font-size: 32px;
+}
 
 /* css cartes général (information personnelles, location,méthode de paiement et comfirmation)*/
 
-    .cartes{
-        background-color: white;
-        border-radius: 10px;
-        padding: 20px;
-
-    }
-    .cartes > p{
-        font-weight: 500;
-        color: #90A3BF;
-        font-size: 14px;
-    }
-    .cartes > label{
-        margin: 30px 0 0 0;
-    }
-    .cartes > .selection{
-        margin : 30px 0 20px 0;
-    }
-    .cartes > button{
-        all: unset;
-        width: 70px;
-        height: 40px;
-        background-color:  #3563E9;
-        color: white;
-        font-weight: bold;
-        text-align: center;
-        border-radius: 4px;
-        margin: 100px 0 0 0;
-    }
-    .cartes button:hover{
-        cursor:pointer;
-        background: rgb(72, 72, 216);
-    }
-    
+.cartes {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+.cartes > p {
+  font-weight: 500;
+  color: #90a3bf;
+  font-size: 14px;
+}
+.cartes > label {
+  margin: 30px 0 0 0;
+}
+.cartes > .selection {
+  margin: 30px 0 20px 0;
+}
+.cartes > button {
+  all: unset;
+  width: 70px;
+  height: 40px;
+  background-color: #3563e9;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 4px;
+  margin: 100px 0 0 0;
+}
+.cartes button:hover {
+  cursor: pointer;
+  background: rgb(72, 72, 216);
+}
 
 /* css cartes location*/
 
-    .pageLocation{
-        display: flex;
-        align-items: flex-start;
-        padding: 30px;
-        gap: 30px;
-    }
-    p[class="debutFinLoc"]{
-        margin: 30px 0 25px 0;
-        color: #1A202C;
-        font-weight: 600;
-        font-size: 16px;
-    }
+.pageLocation {
+  display: flex;
+  align-items: flex-start;
+  padding: 30px;
+  gap: 30px;
+}
+p[class="debutFinLoc"] {
+  margin: 30px 0 25px 0;
+  color: #1a202c;
+  font-weight: 600;
+  font-size: 16px;
+}
 
 /* css cartes methode de paiement */
 
-    .methodePaiement{
-        display: grid;
-        grid-template-columns: auto 1fr auto;
-        grid-template-rows: auto auto;
-        background-color: #E0E9F4;
-        border-radius: 10px;
-        margin :30px 0 20px 0;
-        padding: 20px;
-    }
+.methodePaiement {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto auto;
+  background-color: #e0e9f4;
+  border-radius: 10px;
+  margin: 30px 0 20px 0;
+  padding: 20px;
+}
 
-    .methodePaiement form{
-        margin: 30px 0 0 0;
-        grid-column-end:span 3;
-        display: none;
-    }
-    #CB:checked ~ form{
-        display: flex;
-    }
-    
-    /* css des conteneurs qui contiennent un conteneur .selection et l'image du paiement */
-    .hautRadio{
-        display:flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+.methodePaiement .formPart {
+  margin: 30px 0 0 0;
+  grid-column-end: span 3;
+  display: none;
+}
+#CB:checked ~ .formPart {
+  display: flex;
+}
+
+/* css des conteneurs qui contiennent un conteneur .selection et l'image du paiement */
+.hautRadio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 /* css carte resumé de la location */
 
-    /* css de la colonne droite de la page */
-    .resumeLoc p{
-        margin: 0;
-        font-weight: 500;
-        color: #90A3BF;
-        font-size: 14px;
-    }
-    .prix > p{
-        margin: 0;
-        font-weight: 700;
-        color: #1A202C;
-        font-size: 14px;
-    }
-    .resumeLoc{
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        border-radius: 10px;
-        padding: 20px;
-    }
-    .resumeLoc > button{
-        all: unset;
-        width: 90px;
-        height: 40px;
-        background-color: ;
-        color: #1A202C;
-        border: solid 1px #596780;
-        font-weight: bold;
-        text-align: center;
-        border-radius: 4px;
-        margin: 10px 0 24px 0;
-    }
-    .resumeLoc button:hover{
-        cursor:pointer;
-    }
-    .resumeLoc label{
-        margin: 25px 0 15px 0;
-    }
-    
-    .idLoc{
-        display: flex;
-        align-items: center;
-        border-bottom: 1px solid #E0E9F4;
-        padding: 30px 0 30px 0;
-        margin: 0 0 30px 0 ;
-    }
-    .prix{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .idLoc img{
-        margin: 0 20px 0 0;
-    }
-    .detailPrix{
-        display: flex;
-        flex-direction: column;
-        gap: 25px 0;
-    }
-    .prix p+p{
-        margin: 0;
-        font-weight: 500;
-        color: #90A3BF;
-        font-size: 14px;
-    }
-    .resumeLoc > .prix > p{
-        margin: 0;
-        font-size: 20px;
-    }
-    
-    @media (max-width: 800px) {
-        .pageLocation{
-            display: flex;
-            flex-direction: column-reverse;
-        }
-        .resumeLoc{
-            width: 94%;
-        }
-        
-        .ligne{
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-        form{
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-        .select{
-            width: 100%;
-        }
-        .cartes > .selection{
-            background-color: #E0E9F4;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        .left{
-            display: flex;
-            width: 100%;
+/* css de la colonne droite de la page */
+.resumeLoc p {
+  margin: 0;
+  font-weight: 500;
+  color: #90a3bf;
+  font-size: 14px;
+}
+.prix > p {
+  margin: 0;
+  font-weight: 700;
+  color: #1a202c;
+  font-size: 14px;
+}
+.resumeLoc {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+.resumeLoc > button {
+  all: unset;
+  width: 90px;
+  height: 40px;
+  color: #1a202c;
+  border: solid 1px #596780;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 4px;
+  margin: 10px 0 24px 0;
+}
+.resumeLoc button:hover {
+  cursor: pointer;
+}
+.resumeLoc label {
+  margin: 25px 0 15px 0;
+}
 
-        }
+.idLoc {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e0e9f4;
+  padding: 30px 0 30px 0;
+  margin: 0 0 30px 0;
+}
+.prix {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.idLoc img {
+  margin: 0 20px 0 0;
+}
+.detailPrix {
+  display: flex;
+  flex-direction: column;
+  gap: 25px 0;
+}
+.prix p + p {
+  margin: 0;
+  font-weight: 500;
+  color: #90a3bf;
+  font-size: 14px;
+}
+.resumeLoc > .prix > p {
+  margin: 0;
+  font-size: 20px;
+}
 
-    }
+@media (max-width: 800px) {
+  .pageLocation {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .resumeLoc {
+    width: 100%;
+  }
 
-
-
-
-
-
+  .ligne {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .select {
+    width: 100%;
+  }
+  .cartes > .selection {
+    background-color: #e0e9f4;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .left {
+    display: flex;
+    width: 100%;
+  }
+}

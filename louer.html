@@ -10,11 +10,11 @@
   </header>
   <body>
     <div class="pageLocation">
-      <div class="left">
+      <form class="left">
         <div class="cartes">
           <h1>Informations personnelles</h1>
           <p>Merci de remplir vos informations personnelles</p>
-          <form>
+          <div class="formPart">
             <div class="ligne">
               <div class="select">
                 <label for="nomPers" required="required">Nom</label>
@@ -41,13 +41,13 @@
                 <input type="text" id="villePers" placeholder="Nantes" />
               </div>
             </div>
-          </form>
+          </div>
         </div>
         <div class="cartes">
           <h1>Location</h1>
           <p>Merci de préciser les dates de location</p>
           <p class="debutFinLoc">Début de location</p>
-          <form>
+          <div class="formPart">
             <div class="ligne">
               <div class="select">
                 <label for="villeLoc">Ville</label>
@@ -71,9 +71,9 @@
               </div>
               <div class="select"></div>
             </div>
-          </form>
+          </div>
           <p class="debutFinLoc">Fin de location</p>
-          <form>
+          <div class="formPart">
             <div class="ligne">
               <div class="select">
                 <label for="villeLoc">Ville</label>
@@ -97,7 +97,7 @@
               </div>
               <div class="select"></div>
             </div>
-          </form>
+          </div>
         </div>
         <div class="cartes">
           <h1>Méthode de paiement</h1>
@@ -107,7 +107,7 @@
               <input id="CB" type="radio" name="paiement" />
               <label for="kraken">Carte de crédit</label>
               <img src="componant/Visa.svg" />
-              <form>
+              <div class="formPart">
                 <div class="ligne">
                   <div class="select">
                     <label for="numCarte" required="required">
@@ -142,7 +142,7 @@
                     <input type="text" id="CVC" placeholder="123" />
                   </div>
                 </div>
-              </form>
+              </div>
             </div>
             <div class="methodePaiement">
               <input type="radio" name="paiement" />
@@ -173,9 +173,9 @@
               site.</label
             >
           </div>
-          <button>louer</button>
+          <button type="submit">louer</button>
         </div>
-      </div>
+      </form>
       <div class="resumeLoc">
         <h1>Résumé de la location</h1>
         <p>

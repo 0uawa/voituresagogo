@@ -1,6 +1,6 @@
 ## TODO list
 
-format tel
+[x] format tel
 formulaire margin bords droite du coté gauche
 items 
 fond de photo voiture a droite
