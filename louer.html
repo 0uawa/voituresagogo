@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Louer Voituragogo</title>
+    <link rel="stylesheet" href="styleLouer.css" />
+  </head>
+  <header>
+    <p>Voituragogo</p>
+  </header>
+  <body>
+    <div class="pageLocation">
+      <div class="left">
+        <div class="cartes">
+          <h1>Informations personnelles</h1>
+          <p>Merci de remplir vos informations personnelles</p>
+          <form>
+            <div class="ligne">
+              <div class="select">
+                <label for="nomPers" required="required">Nom</label>
+                <input type="text" id="nomPers" placeholder="Simon Strueux" />
+              </div>
+              <div class="select">
+                <label for="numPers" required="required"
+                  >Numéro de téléphone</label
+                >
+                <input type="text" id="numPers" placeholder="0123456789" />
+              </div>
+            </div>
+            <div class="ligne">
+              <div class="select">
+                <label for="adressePers" required="required">Adresse</label>
+                <input
+                  type="text"
+                  id="adressePers"
+                  placeholder="2 rue de la poésie"
+                />
+              </div>
+              <div class="select">
+                <label for="villePers" required="required">Ville</label>
+                <input type="text" id="villePers" placeholder="Nantes" />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="cartes">
+          <h1>Location</h1>
+          <p>Merci de préciser les dates de location</p>
+          <p class="debutFinLoc">Début de location</p>
+          <form>
+            <div class="ligne">
+              <div class="select">
+                <label for="villeLoc">Ville</label>
+                <select id="villeLoc">
+                  <option>Sélectionner votre ville</option>
+                  <option>Paris</option>
+                  <option>Nantes</option>
+                  <option>Bordeaux</option>
+                  <option>Marseille</option>
+                </select>
+              </div>
+              <div class="select">
+                <label for="date">Date</label>
+                <input type="date" id="date" />
+              </div>
+            </div>
+            <div class="ligne">
+              <div class="select">
+                <label>Heure</label>
+                <input type="time" />
+              </div>
+              <div class="select"></div>
+            </div>
+          </form>
+          <p class="debutFinLoc">Fin de location</p>
+          <form>
+            <div class="ligne">
+              <div class="select">
+                <label for="villeLoc">Ville</label>
+                <select id="villeLoc">
+                  <option>Sélectionner votre ville</option>
+                  <option>Paris</option>
+                  <option>Nantes</option>
+                  <option>Bordeaux</option>
+                  <option>Marseille</option>
+                </select>
+              </div>
+              <div class="select">
+                <label for="date">Date</label>
+                <input type="date" id="date" />
+              </div>
+            </div>
+            <div class="ligne">
+              <div class="select">
+                <label>Heure</label>
+                <input type="time" />
+              </div>
+              <div class="select"></div>
+            </div>
+          </form>
+        </div>
+        <div class="cartes">
+          <h1>Méthode de paiement</h1>
+          <p>Merci de renseigner vos informations de paiement</p>
+          <fieldset>
+            <div class="methodePaiement">
+              <input id="CB" type="radio" name="paiement" />
+              <label for="kraken">Carte de crédit</label>
+              <img src="componant/Visa.svg" />
+              <form>
+                <div class="ligne">
+                  <div class="select">
+                    <label for="numCarte" required="required">
+                      Numéro de carte
+                    </label>
+                    <input
+                      type="text"
+                      id="numCarte"
+                      placeholder="1234 5678 1234 5678"
+                    />
+                  </div>
+                  <div class="select">
+                    <label for="dateDex" required="required">
+                      Date d'expiration
+                    </label>
+                    <input type="text" id="dateDex" placeholder="mm/jj" />
+                  </div>
+                </div>
+                <div class="ligne">
+                  <div class="select">
+                    <label for="nomCarte" required="required"
+                      >Nom de la carte</label
+                    >
+                    <input
+                      type="text"
+                      id="nomCarte"
+                      placeholder="Simon Strueux"
+                    />
+                  </div>
+                  <div class="select">
+                    <label for="CVC" required="required">CVC</label>
+                    <input type="text" id="CVC" placeholder="123" />
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="methodePaiement">
+              <input type="radio" name="paiement" />
+              <label for="kraken">Paypal</label>
+              <img src="/componant/PayPal.svg" />
+            </div>
+            <div class="methodePaiement">
+              <input type="radio" name="paiement" />
+              <label for="kraken">Bitcoin</label>
+              <img src="/componant/Bitcoin.svg" />
+            </div>
+          </fieldset>
+        </div>
+        <div class="cartes">
+          <h1>Confirmation</h1>
+          <p>
+            Nous arrivons vers la fin. Juste quelques clics et votre location
+            est prête !
+          </p>
+          <div class="selection">
+            <input type="checkbox" />
+            <label>J’accepte de recevoir des offres promotionnelles.</label>
+          </div>
+          <div class="selection">
+            <input type="checkbox" />
+            <label
+              >J’accepte les conditions de vente et la politique privée du
+              site.</label
+            >
+          </div>
+          <button>louer</button>
+        </div>
+      </div>
+      <div class="resumeLoc">
+        <h1>Résumé de la location</h1>
+        <p>
+          Les prix peuvent changer selon la durée de la location et le prix de
+          la voiture.
+        </p>
+        <div class="idLoc">
+          <img src="/componant//Look.svg" />
+          <h1>Nissan GT - R</h1>
+        </div>
+        <div class="detailPrix">
+          <div class="prix">
+            <p>Sous-total</p>
+            <p>80€</p>
+          </div>
+          <div class="prix">
+            <p>Taxes</p>
+            <p>0€</p>
+          </div>
+        </div>
+        <label for="codePromo">Code promo</label>
+        <input type="text" id="codePromo" placeholder="XXXXXXXXX" />
+        <button>Appliquer</button>
+        <div class="prix">
+          <div>
+            <h1>Prix total</h1>
+            <p>Prix total incluant les remises</p>
+          </div>
+          <p class="">80€</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+@font-face {
+	font-family: 'Open Sans';
+	src: url("/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf") format("truetype");
+}
+
+*{
+    font-family: 'Open Sans';
+}
+span{
+    all:unset;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+}
+header {
+    padding: 40px 0px 40px 60px;
+    background-color: white;
+    
+}
+header p{
+    all: unset;
+    color: #3563E9;
+    font-weight: 700;
+    font-size: 32px;
+}
+body{
+    margin: 0;
+    background-color: #F6F7F9;
+}
+h1{
+    all: unset;
+    font-size:20px;
+    color: #1A202C;
+    font-weight: 700;
+}
+p{
+    font-weight:700;
+    color: #90A3BF;
+}
+
+.catalogue{
+    padding: 0 60px 34px 64px;
+}
+.catalogue > p{
+    margin: 40px 0 30px 0;
+    font-weight: 600;
+    font-size: 24px;
+}
+.cars{
+    display: flex;
+    flex-wrap: wrap;
+}
+.car > p{
+    font-size: 14px;
+    font-weight:700 ;
+}
+.forMobile > img{
+    display: flex;
+    align-self: center;
+    margin:50px 0 ; 
+}
+.forMobile{
+    display: flex;
+    flex-direction: column;
+}
+.forMobile img{
+    max-width: 100%;
+    min-width: 0;
+}
+.car{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin:0 2.5% 2.5% 0;
+    background-color: white;
+    border-radius: 10px;
+    padding: 24px;
+}
+.characteristic p{
+    font-weight: 500;
+    margin:0 0 0 5px;
+}
+.characteristics{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 0 25px 0;
+}
+.characteristic{
+    display: flex;
+    align-items: center;
+}
+
+.buy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prix{
+    color: black;
+}
+a{
+    all: unset;
+}
+button{
+    all: unset;
+    padding:10px 20px;
+    background-color:  #3563E9;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 4px;
+}
+button:hover{
+    cursor:pointer;
+    background: rgb(72, 72, 216);
+}
+
+@media (max-width: 800px) {
+    .forMobile{
+        display : flex ;
+        flex-direction: row;
+        margin: 0 0 30px 0;
+
+    }
+    .forMobile img{
+        height: 75% ;
+    }
+    
+    .forMobile > img{
+        margin: 25px 0;
+
+    }
+    .forMobile p{
+        font-size: 75%;
+    }
+    .characteristics{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 5px;
+
+    }    
+    .cars{
+        display: flex;
+        flex-direction: column;
+    }
+    .car{
+        display: flex;
+        gap: 20px;
+    }
+    
+}
