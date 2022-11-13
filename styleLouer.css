@@ -8,6 +8,7 @@
 /* application de la police d'écriture à tout les carachtère du site */
 * {
   font-family: "Open Sans";
+  box-sizing: border-box;
 }
 
 /* css général des balises */
@@ -263,9 +264,9 @@ p[class="debutFinLoc"] {
   font-size: 20px;
 }
 
-@media (max-width: 800px) {
+@media only screen and (max-width: 800px) {
   .pageLocation {
-    display: flex;
+    display: flex;  
     flex-direction: column-reverse;
   }
   .resumeLoc {
@@ -273,7 +274,6 @@ p[class="debutFinLoc"] {
   }
 
   .ligne {
-    display: flex;
     flex-direction: column;
     gap: 20px;
   }
